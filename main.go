@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Declairing variables like age, name, height, state, etc.
+	// Declaring variables like age, name, height, state, etc.
 	name := "Ejembi"
 	var age int = 23
 	var height float64 = 5.9
@@ -27,7 +27,7 @@ func greet(name string) {
 	fmt.Println(message)
 }
 
-// sum of float64 of y and z resulting in an integer
+// sum of an int and a float64 resulting in a float64
 func addNumbers(y int, z float64) float64 {
 	return float64(y) + z
 }
