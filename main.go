@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-
+	// Declairing variables like age, name, height, state, etc.
 	name := "Ejembi"
 	var age int = 23
 	var height float64 = 5.9
@@ -14,18 +14,20 @@ func main() {
 	state := "Kwararafa"
 
 	fmt.Println(name, age, height, occupation, isMarried, isStudent, nationality, state)
-
+	// function greet
 	greet("Ejembi")
-
+	// function addNumbers. it helps to sum up two integers or an int + float64, etc.
 	result := addNumbers(24, 24.5)
 	fmt.Println(result)
 }
 
+// function greet, with the concatination of the message and name
 func greet(name string) {
 	message := "Abole, " + name + "?"
 	fmt.Println(message)
 }
 
-func addNumbers(y int, z float64) float64 {
-	return float64(y) + z
+// sum of float64 of y and z resulting in an integer
+func addNumbers(y float64, z float64) int {
+	return int(y + z)
 }
