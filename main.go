@@ -28,6 +28,6 @@ func greet(name string) {
 }
 
 // sum of float64 of y and z resulting in an integer
-func addNumbers(y float64, z float64) int {
-	return int(y + z)
+func addNumbers(y int, z float64) float64 {
+	return float64(y) + z
 }
