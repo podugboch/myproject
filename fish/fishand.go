@@ -13,5 +13,8 @@ func FishAndChips(n int) string {
 	if n%3 == 0 {
 		return "chips"
 	}
+	if n%2 != 0 && n%3 != 0 {
+		return "error: none divisible"
+	}
 	return ""
 }
